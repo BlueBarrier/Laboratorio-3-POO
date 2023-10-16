@@ -21,6 +21,14 @@
     protected String categoria;
     protected String estado;
 
+public Espacio(String ID, String mCuadrados, int cantDisponible, int cantVendidos, String categoria, String estado){
+    this.ID=ID;
+    this.mCuadrados=mCuadrados;
+    this.cantDisponible=cantDisponible;
+    this.cantVendidos=cantVendidos;
+    this.categoria=categoria;
+    this.estado=estado;
+}
 public String getID(){return ID;}
 public void setID(String ID){this.ID=ID;} 
 public String getMCuadrados(){return mCuadrados;}
