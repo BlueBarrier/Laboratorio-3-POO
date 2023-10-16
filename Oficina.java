@@ -5,12 +5,12 @@
  * 
  * clase para almacenar datos de oficina
  * 
- * @author: Erick Barrera - 231238
- * @version: 1.0.0
+ * @author: Erick Barrera - 231238, Juan Figueroa - 23092
+ * @version: 1.0.1
  * @date: 16/10/23
  * @lastUpdate: 16/10/23
  * 
- * Changes: --
+ * Changes: creación del constructor
  * 
  */
 public class Oficina extends Espacio{

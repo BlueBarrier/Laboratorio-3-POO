@@ -17,11 +17,46 @@ public class Amenidades extends Espacio{
     private String tipoAmenidad;
     private String capacidad;
 
+    /**
+     * @param ID
+     * @param mCuadrados
+     * @param cantDisponible
+     * @param cantVendidos
+     * @param categoria
+     * @param estado
+     * @param tipoAmenidad
+     * @param capacidad
+     */
     public Amenidades(String ID, String mCuadrados, int cantDisponible, int cantVendidos, String categoria, 
     String estado, String tipoAmenidad, String capacidad){
         super(ID, mCuadrados, cantDisponible, cantVendidos, categoria, estado);
         this.tipoAmenidad = tipoAmenidad;
         this.capacidad = capacidad;
     }
-    
+    // getters y setters
+    /**
+     * @return
+     */
+    public String getCapacidad() {
+        return capacidad;
+    }
+    /**
+     * @param capacidad
+     */
+    public void setCapacidad(String capacidad) {
+        this.capacidad = capacidad;
+    }
+
+    /**
+     * @return
+     */
+    public String getTipoAmenidad() {
+        return tipoAmenidad;
+    }
+    /**
+     * @param tipoAmenidad
+     */
+    public void setTipoAmenidad(String tipoAmenidad) {
+        this.tipoAmenidad = tipoAmenidad;
+    }
 }
