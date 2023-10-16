@@ -14,5 +14,14 @@
  * 
  */
 public class Amenidades extends Espacio{
+    private String tipoAmenidad;
+    private String capacidad;
+
+    public Amenidades(String ID, String mCuadrados, int cantDisponible, int cantVendidos, String categoria, 
+    String estado, String tipoAmenidad, String capacidad){
+        super(ID, mCuadrados, cantDisponible, cantVendidos, categoria, estado);
+        this.tipoAmenidad = tipoAmenidad;
+        this.capacidad = capacidad;
+    }
     
 }

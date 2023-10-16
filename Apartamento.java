@@ -14,5 +14,50 @@
  * 
  */
 public class Apartamento extends Espacio{
+    private boolean lineaBlanca;
+    private String habitaciones;
     
+    /**
+     * @param ID
+     * @param mCuadrados
+     * @param cantDisponible
+     * @param cantVendidos
+     * @param categoria
+     * @param estado
+     * @param lineaBlanca
+     * @param habitaciones
+     */
+    public Apartamento(String ID, String mCuadrados, int cantDisponible, int cantVendidos, String categoria, 
+    String estado, boolean lineaBlanca, String habitaciones){
+        super(ID, mCuadrados, cantDisponible, cantVendidos, categoria, estado);
+        this.lineaBlanca = lineaBlanca;
+        this.habitaciones = habitaciones;
+    }
+
+    // Getters y Setters 
+    /**
+     * @return
+     */
+    public String getHabitaciones() {
+        return habitaciones;
+    }
+    /**
+     * @param habitaciones
+     */
+    public void setHabitaciones(String habitaciones) {
+        this.habitaciones = habitaciones;
+    }
+
+    /**
+     * @return
+     */
+    public boolean getLineaBlanca() {
+        return lineaBlanca;
+    }
+    /**
+     * @param lineaBlanca
+     */
+    public void setLineaBlanca(boolean lineaBlanca) {
+        this.lineaBlanca = lineaBlanca;
+    }
 }
