@@ -27,7 +27,7 @@ public class Amenidades extends Espacio{
      * @param tipoAmenidad
      * @param capacidad
      */
-    public Amenidades(String ID, String mCuadrados, int cantDisponible, int cantVendidos, String categoria, 
+    public Amenidades(String ID, String mCuadrados, String cantDisponible, String cantVendidos, String categoria, 
     String estado, String tipoAmenidad, String capacidad){
         super(ID, mCuadrados, cantDisponible, cantVendidos, categoria, estado);
         this.tipoAmenidad = tipoAmenidad;

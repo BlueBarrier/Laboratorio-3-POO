@@ -14,7 +14,7 @@
  * 
  */
 public class Apartamento extends Espacio{
-    private boolean lineaBlanca;
+    private String lineaBlanca;
     private String habitaciones;
     
     /**
@@ -27,8 +27,8 @@ public class Apartamento extends Espacio{
      * @param lineaBlanca
      * @param habitaciones
      */
-    public Apartamento(String ID, String mCuadrados, int cantDisponible, int cantVendidos, String categoria, 
-    String estado, boolean lineaBlanca, String habitaciones){
+    public Apartamento(String ID, String mCuadrados, String cantDisponible, String cantVendidos, String categoria, 
+    String estado, String lineaBlanca, String habitaciones){
         super(ID, mCuadrados, cantDisponible, cantVendidos, categoria, estado);
         this.lineaBlanca = lineaBlanca;
         this.habitaciones = habitaciones;
@@ -51,13 +51,13 @@ public class Apartamento extends Espacio{
     /**
      * @return
      */
-    public boolean getLineaBlanca() {
+    public String getLineaBlanca() {
         return lineaBlanca;
     }
     /**
      * @param lineaBlanca
      */
-    public void setLineaBlanca(boolean lineaBlanca) {
+    public void setLineaBlanca(String lineaBlanca) {
         this.lineaBlanca = lineaBlanca;
     }
 }

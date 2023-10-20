@@ -15,7 +15,7 @@
  */
 public class Oficina extends Espacio{
     private String totalParqueos;
-    private boolean mantenimiento;
+    private String mantenimiento;
 
     /**
      * @param ID
@@ -27,8 +27,8 @@ public class Oficina extends Espacio{
      * @param totalParqueos
      * @param mantenimiento
      */
-    public Oficina(String ID, String mCuadrados, int cantDisponible, int cantVendidos, String categoria, 
-    String estado, String totalParqueos, boolean mantenimiento){
+    public Oficina(String ID, String mCuadrados, String cantDisponible, String cantVendidos, String categoria, 
+    String estado, String totalParqueos, String mantenimiento){
         super(ID, mCuadrados, cantDisponible, cantVendidos, categoria, estado);
         this.totalParqueos = totalParqueos;
         this.mantenimiento = mantenimiento;
@@ -51,13 +51,13 @@ public class Oficina extends Espacio{
     /**
      * @return
      */
-    public boolean getMantenimiento(){
+    public String getMantenimiento(){
         return mantenimiento;
     }
     /**
      * @param mantenimiento
      */
-    public void setMantenimiento(boolean mantenimiento) {
+    public void setMantenimiento(String mantenimiento) {
         this.mantenimiento = mantenimiento;
     }
 }
