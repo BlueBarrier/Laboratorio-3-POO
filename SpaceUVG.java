@@ -75,13 +75,13 @@ public class SpaceUVG {
                             scan.nextLine();
                             switch (categoria) {
                                 case 1:
-                                    // LeerEspacio.listar(Apartamento);
+                                    DataReader.listar("Apartamento", allData);
                                     break;
                                 case 2:
-                                    // LeerEspacio.listar(Oficina);
+                                    DataReader.listar("Oficina", allData);
                                     break;
                                 case 3:
-                                    // LeerEspacio.listar(Amenidades);
+                                    DataReader.listar("Amenidades", allData);
                                     break;
                                 case 4:
                                     System.out.println("Volviendo al menú...");
@@ -105,13 +105,13 @@ public class SpaceUVG {
                             scan.nextLine();
                             switch (categoria) {
                                 case 1:
-                                    // LeerEspacio.estado(Apartamento);
+                                    DataReader.estado("Apartamento", allData);
                                     break;
                                 case 2:
-                                    // LeerEspacio.estado(Oficina);
+                                    DataReader.estado("Oficina", allData);
                                     break;
                                 case 3:
-                                    // LeerEspacio.estado(Amenidades);
+                                    DataReader.estado("Amenidades", allData);
                                     break;
                                 case 4:
                                     System.out.println("Volviendo al menú...");
@@ -121,6 +121,7 @@ public class SpaceUVG {
                                     break;
                             }
                         } catch (Exception e) {
+                            System.out.println(e.getMessage());
                             System.out.println("Ingreso inválido!!");
                         }
                         break;
