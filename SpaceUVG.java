@@ -22,7 +22,7 @@ public class SpaceUVG {
         ArrayList<Espacio> allData=DataReader.LeerData();
         System.out.println("Bienvenid@ al programa SpaceUVG");
         do {
-            System.out.println("----Menú----"+
+            System.out.println("\n----Menú----"+
                                 "\n1. Desplegar informe de espacios"+
                                 "\n2. Buscar espacioUVG por ID"+
                                 "\n3. Listar espacio por categoría"+
@@ -85,7 +85,7 @@ public class SpaceUVG {
                                     break;
                                 case 4:
                                     System.out.println("Volviendo al menú...");
-                                    return;
+                                    break;
                                 default:
                                     System.out.println("Seleccione una opción válida!");
                                     break;
@@ -115,7 +115,7 @@ public class SpaceUVG {
                                     break;
                                 case 4:
                                     System.out.println("Volviendo al menú...");
-                                    return;
+                                    break;
                                 default:
                                     System.out.println("Seleccione una opción válida!");
                                     break;

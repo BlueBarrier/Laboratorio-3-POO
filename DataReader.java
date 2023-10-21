@@ -143,7 +143,7 @@ public class DataReader {
     }
 
     /**
-     * función para mostrar por categorías 
+     * función para mostrar por categorías el estado
      * 
      * @param categoria
      * @param data
@@ -165,27 +165,10 @@ public class DataReader {
                         }
                     }
                 }
-                System.out.println("\n Disponibles: ");
-                for (Espacio disponible : disponibles) {
-                    Apartamento apartamento = (Apartamento) disponible;
-                    System.out.println("-Código: "+apartamento.getID()+" metros cuadrados: "+apartamento.getMCuadrados()+
-                                            "\n estado: "+apartamento.getEstado()+" línea blanca: "+apartamento.getLineaBlanca()+
-                                            "\n habitaciones: "+apartamento.getHabitaciones());
-                }
-                System.out.println("\n Reservados: ");
-                for (Espacio reservado : reservados) {
-                    Apartamento apartamento = (Apartamento) reservado;
-                    System.out.println("-Código: "+apartamento.getID()+" metros cuadrados: "+apartamento.getMCuadrados()+
-                                            "\n estado: "+apartamento.getEstado()+" línea blanca: "+apartamento.getLineaBlanca()+
-                                            "\n habitaciones: "+apartamento.getHabitaciones());
-                }
-                System.out.println("\n Vendidos: ");
-                for (Espacio vendido : vendidos) {
-                    Apartamento apartamento = (Apartamento) vendido;
-                    System.out.println("-Código: "+apartamento.getID()+" metros cuadrados: "+apartamento.getMCuadrados()+
-                                            "\n estado: "+apartamento.getEstado()+" línea blanca: "+apartamento.getLineaBlanca()+
-                                            "\n habitaciones: "+apartamento.getHabitaciones());
-                }
+                System.out.println("\nDisponibles: "+disponibles.size());
+                System.out.println("Reservados: "+ reservados.size());
+                System.out.println("Vendidos: "+vendidos.size());
+                
                 break;
             case "Oficina":
                 for (Espacio espacio : data) {
@@ -199,27 +182,9 @@ public class DataReader {
                         }
                     }
                 }
-                System.out.println("\n Disponibles: ");
-                for (Espacio disponible : disponibles) {
-                    Oficina oficina = (Oficina) disponible;
-                     System.out.println("-Código: "+oficina.getID()+" metros cuadrados: "+oficina.getMCuadrados()+
-                                            "\n estado: "+oficina.getEstado()+" total parqueos: "+oficina.getTotalParqueos()+
-                                            "\n mantenimiento: "+oficina.getMantenimiento());
-                }
-                System.out.println("\n Reservados: ");
-                for (Espacio reservado : reservados) {
-                    Oficina oficina = (Oficina) reservado;
-                     System.out.println("-Código: "+oficina.getID()+" metros cuadrados: "+oficina.getMCuadrados()+
-                                            "\n estado: "+oficina.getEstado()+" total parqueos: "+oficina.getTotalParqueos()+
-                                            "\n mantenimiento: "+oficina.getMantenimiento());
-                }
-                System.out.println("\n Vendidos: ");
-                for (Espacio vendido : vendidos) {
-                    Oficina oficina = (Oficina) vendido;
-                     System.out.println("-Código: "+oficina.getID()+" metros cuadrados: "+oficina.getMCuadrados()+
-                                            "\n estado: "+oficina.getEstado()+" total parqueos: "+oficina.getTotalParqueos()+
-                                            "\n mantenimiento: "+oficina.getMantenimiento());
-                }
+                System.out.println("\nDisponibles: "+disponibles.size());
+                System.out.println("Reservados: "+ reservados.size());
+                System.out.println("Vendidos: "+vendidos.size());
                 break;
             case "Amenidades":
                 for (Espacio espacio : data) {
@@ -233,27 +198,9 @@ public class DataReader {
                         }
                     }
                 }
-                System.out.println("\n Disponibles: ");
-                for (Espacio disponible : disponibles) {
-                    Amenidades amenidad = (Amenidades) disponible;
-                    System.out.println("-Código: "+amenidad.getID()+" metros cuadrados: "+amenidad.getMCuadrados()+
-                                            "\n estado: "+amenidad.getEstado()+" total parqueos: "+amenidad.getTipoAmenidad()+
-                                            "\n mantenimiento: "+amenidad.getCapacidad());
-                }
-                System.out.println("\n Reservados: ");
-                for (Espacio reservado : reservados) {
-                    Amenidades amenidad = (Amenidades) reservado;
-                    System.out.println("-Código: "+amenidad.getID()+" metros cuadrados: "+amenidad.getMCuadrados()+
-                                            "\n estado: "+amenidad.getEstado()+" total parqueos: "+amenidad.getTipoAmenidad()+
-                                            "\n mantenimiento: "+amenidad.getCapacidad());
-                }
-                System.out.println("\n Vendidos: ");
-                for (Espacio vendido : vendidos) {
-                    Amenidades amenidad = (Amenidades) vendido;
-                   System.out.println("-Código: "+amenidad.getID()+" metros cuadrados: "+amenidad.getMCuadrados()+
-                                            "\n estado: "+amenidad.getEstado()+" total parqueos: "+amenidad.getTipoAmenidad()+
-                                            "\n mantenimiento: "+amenidad.getCapacidad());
-                }
+                System.out.println("\nDisponibles: "+disponibles.size());
+                System.out.println("Reservados: "+ reservados.size());
+                System.out.println("Vendidos: "+vendidos.size());
                 break;
             default:
                 break;
