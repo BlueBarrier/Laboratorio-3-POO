@@ -111,7 +111,7 @@ public class DataReader {
                         Apartamento apartamento = (Apartamento) espacio;
                         System.out.println("-Código: "+apartamento.getID()+" metros cuadrados: "+apartamento.getMCuadrados()+
                                             "\n estado: "+apartamento.getEstado()+" línea blanca: "+apartamento.getLineaBlanca()+
-                                            "\n habitaciones: "+apartamento.getHabitaciones());
+                                            "\n habitaciones: "+apartamento.getHabitaciones()+" Vendidos: "+apartamento.getCantVendidos()+ " Disponibles: "+apartamento.getCantDisponible());
                     }
                 }
                 break;
@@ -122,7 +122,7 @@ public class DataReader {
                         Oficina oficina = (Oficina) espacio;
                         System.out.println("-Código: "+oficina.getID()+" metros cuadrados: "+oficina.getMCuadrados()+
                                             "\n estado: "+oficina.getEstado()+" total parqueos: "+oficina.getTotalParqueos()+
-                                            "\n mantenimiento: "+oficina.getMantenimiento());
+                                            "\n mantenimiento: "+oficina.getMantenimiento()+" Vendidos: "+oficina.getCantVendidos()+" Disponibles: "+oficina.getCantDisponible());
                     }
                 }
                 break;
@@ -133,7 +133,7 @@ public class DataReader {
                         Amenidades amenidad = (Amenidades) espacio;
                         System.out.println("-Código: "+amenidad.getID()+" metros cuadrados: "+amenidad.getMCuadrados()+
                                             "\n estado: "+amenidad.getEstado()+" total parqueos: "+amenidad.getTipoAmenidad()+
-                                            "\n mantenimiento: "+amenidad.getCapacidad());
+                                            "\n mantenimiento: "+amenidad.getCapacidad()+" Vendidos: "+ amenidad.getCantVendidos()+" Disponibles: "+ amenidad.getCantDisponible());
                     }
                 }
                 break;
